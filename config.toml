@@ -1,4 +1,14 @@
-baseURL = "http://example.org/"
+baseURL = ""
 languageCode = "en-us"
 title = "Jack B. Muir"
 theme = "jbmuir-theme"
+contentdir = "content" 
+layoutdir = "layouts" 
+publishdir = "public" 
+canonifyurls = true 
+MetaDataFormat = "toml" 
+[indexes] 
+    category = "categories" 
+    tag = "tags" 
+[author] 
+    name = "Jack B. Muir" 
