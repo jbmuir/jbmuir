@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jack B. Muir</title>
+    <link>/</link>
+    <description>Recent content on Jack B. Muir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>second</title>
+      <link>/post/second-post/</link>
+      <pubDate>Sat, 27 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/second-post/</guid>
+      <description>second post second post, on a roll!</description>
+    </item>
+    
+    <item>
+      <title>first</title>
+      <link>/post/first-post/</link>
+      <pubDate>Sat, 13 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/first-post/</guid>
+      <description>first post so glad to say that this is the first post</description>
+    </item>
+    
+  </channel>
+</rss>
