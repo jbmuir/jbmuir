@@ -1,4 +1,0 @@
-[submodule "themes/jbmuir-theme"]
-	path = themes/jbmuir-theme
-	url = https://github.com/jbmuir/jbmuir-theme.git
-	branch = master
