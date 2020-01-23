@@ -1,10 +1,6 @@
 #lang pollen
 
 index.html
-◊research.html{
-               geological-tomography.html
-               wavefield-reconstruction.html
-               bayesian-geophysical-methods.html
-}
-cv.html
+research.html
+publications.html
 contact.html

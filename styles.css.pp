@@ -17,6 +17,7 @@
 ◊(define secondary-accent-color "white")
 ◊(define border-halfwidth 0.1)
 
+
 @import url(fonts/charter/charter.css);
 @import url(https://code.cdn.mozilla.net/fonts/fira.css);
 
@@ -24,20 +25,22 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* this seems quite stupid but whatever 
-       apparently body sets a global margin
-       and the width includes padding*/
-    width: ◊(- edge (+ (/ 2 golden-mean) border-halfwidth))em;
+    width: ◊(- edge border-halfwidth)em;
     overflow: hidden;
-    display: block;
     float: left;
+    background: ◊|primary-color|;
+    border-right: solid ◊|border-halfwidth|em;
+    border-color: ◊|primary-accent-color|;
+}
+
+.myname a {
+    display: block;
+    float: right;
     padding: ◊/[1 golden-mean]em;
     font-family: "Fira Sans", "Helvetica Neue", sans-serif;
     text-align: right;
     text-decoration: none;
-    background: ◊|primary-color|;
     color: ◊|primary-accent-color|;
-    border-right: solid ◊|border-halfwidth|em;
 }
 
 nav {
@@ -79,4 +82,27 @@ h1 {
     font-size: ◊|silver-mean|em;
 }
 
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
 
+◊(define margin-note-margin (* text-width (/ 1 golden-mean)))
+◊(define margin-note-width (* (- 1 (/ 1 (metallic-mean 5))) margin-note-margin))
+
+.margin-note {
+    float: right;
+    clear: right;
+    margin-right: -◊|margin-note-margin|em;
+    width: ◊|margin-note-width|em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-style: italic;
+    vertical-align: baseline;
+    position: relative; 
+}
