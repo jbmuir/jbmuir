@@ -22,3 +22,5 @@ The bulk properties of the Earth are directly connected to seismic waves through
 ◊margin-note{◊image{Oldham_Fig2b.jpg} 
 Bayesian changepoint analysis of the data from Oldham (1906) (Muir & Tsai 2020)}
 ◊section{Bayesian Geophysical Methods}
+
+Almost all geophysical inverse problems are ill-posed, and almost all geophysical data is noisy. Solving ill-posedness requires some ◊emph{a priori} about the likely structure of the Earth, and accounting for data requires ◊emph{a priori} knowledge about the distribution of data errors. The Bayesian statistical framework gives us the toolset to formally account for these assumptions, with the useful outcome that we obtain some understanding of the distribution of possible solutions, rather than just the best fitting one. A recent highlight from this line of research is our finding in Muir & Tsai (2020) that the discovery of Earth's core (Oldham, 1906) is robust when only the Primary arrival dataset is included - in this study we present some useful results for handling very noisy historical datasets by marginalizing across multiple sources of error. 

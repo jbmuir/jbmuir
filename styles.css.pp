@@ -91,8 +91,19 @@ hr {
     text-align: center;
 }
 
-◊(define margin-note-margin (* text-width (/ 1 golden-mean)))
+◊;◊(define margin-note-margin (* text-width (/ 1 golden-mean)))
+◊(define margin-note-margin text-width)
 ◊(define margin-note-width (* (- 1 (/ 1 (metallic-mean 5))) margin-note-margin))
+
+.publication-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.publication-list li {
+    padding-bottom: 1em;
+}
 
 .margin-note {
     float: right;
@@ -101,8 +112,9 @@ hr {
     width: ◊|margin-note-width|em;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: 1rem;
     font-style: italic;
     vertical-align: baseline;
     position: relative; 
 }
+

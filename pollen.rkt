@@ -51,6 +51,21 @@
 (define (section . elements)
   (txexpr 'h4 empty elements))
 
+(define (emph . elements)
+  (txexpr 'i empty elements))
+
+(define (bold . elements)
+  (txexpr 'b empty elements))
+
+(define (list . elements)
+  (txexpr 'ul empty elements))
+
+(define (publist . elements)
+  (txexpr 'div '((class "publication-list")) `((ul ,@elements))))
+
+(define (item . elements)
+  (txexpr 'li empty elements))
+
 (define sectionbreak 
   '(hr))
 
