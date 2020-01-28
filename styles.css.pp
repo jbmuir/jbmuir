@@ -91,8 +91,8 @@ hr {
     text-align: center;
 }
 
-◊;◊(define margin-note-margin (* text-width (/ 1 golden-mean)))
-◊(define margin-note-margin text-width)
+◊(define margin-note-margin (* text-width (/ 1 golden-mean)))
+◊;◊(define margin-note-margin text-width)
 ◊(define margin-note-width (* (- 1 (/ 1 (metallic-mean 5))) margin-note-margin))
 
 .publication-list ul {
@@ -112,9 +112,18 @@ hr {
     width: ◊|margin-note-width|em;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 1em;
     font-style: italic;
     vertical-align: baseline;
     position: relative; 
 }
 
+.section {
+    border-top: medium double #333;
+}
+
+.section::after {
+  content: "";
+  clear: both;
+  display: table;
+}

@@ -48,8 +48,11 @@
 (define (title . elements)
   (txexpr 'h1 empty elements))
 
-(define (section . elements)
-  (txexpr 'h4 empty elements))
+(define sectionbreak 
+  '(hr))
+
+(define (section title . elements)
+    (txexpr 'div '((class "section")) `((h4 ,title) ,@elements)))
 
 (define (emph . elements)
   (txexpr 'i empty elements))
@@ -65,9 +68,6 @@
 
 (define (item . elements)
   (txexpr 'li empty elements))
-
-(define sectionbreak 
-  '(hr))
 
 (define (margin-note . elements)
   (txexpr 'div '((class "margin-note")) elements))
